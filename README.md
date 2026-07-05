@@ -10,14 +10,15 @@ Solidify-eml implementa un pipeline de auditoría estructurado en tres capas:
 
 1. **Traducción y Mapeo Lógico (src/)**: Procesamiento del AST de Solidity para homogeneizar las invariantes aritméticas y financieras mediante el Operador Binario Universal de Odrzywołek ($e^x - \ln(y)$).
 2. **Intuición de Parches (Vibe Proving)**: Integración con APIs de modelos de lenguaje masivos para la conjetura de parches de seguridad y la inyección de comentarios lógicos en línea.
-3. **Verificación Formal en Lean 4 (lean/)**: Ciclo de verificación y autorreparación cerrada sobre el demostrador formal Lean 4 mediante automatización táctica con el motor aesop.
+3. **Verificación Formal en Lean 4 (lean_env/)**: Ciclo de verificación y autorreparación cerrada sobre el demostrador formal Lean 4 mediante automatización táctica con el motor aesop.
 
 ## Estructura del Repositorio
 
-* `src/`: Módulos de traducción de AST y parseo de Solidity.
-* `lean/`: Especificaciones formales y demostraciones matemáticas en Lean 4.
-* `tests/`: Casos de prueba de contratos vulnerables y parches certificados.
-* `docs/`: Documentación del proyecto y memoria técnica.
+* `contracts/`: Banco de pruebas con contratos inteligentes de Solidity en versiones vulnerables y parcheadas.
+* `src/`: Módulos de orquestación en Python (parser, mapeador a operador universal y cliente del LLM).
+* `lean_env/`: Entorno formal con las especificaciones y demostraciones de teoremas en Lean 4.
+* `tests/`: Pruebas de integración y test unitarios del pipeline de Python.
+* `docs/`: Documentación complementaria y memoria técnica de la propuesta.
 
 ## Licencia
 
