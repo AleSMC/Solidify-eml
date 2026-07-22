@@ -2,7 +2,7 @@
 
 Framework de auditoría y verificación formal acelerada de Smart Contracts en Solidity mediante Operadores Universales y guiado de pruebas en asistentes formales (Draft, Sketch, and Prove).
 
-Este repositorio contendrá el prototipo del Producto Mínimo Viable (MVP) desarrollado durante la estancia de investigación en el centro de ciberseguridad GSEC Málaga, en el marco de la convocatoria de Premios de la Cátedra de Ciberseguridad UMA-VirusTotal / Google.
+Este repositorio contiene el prototipo del Producto Mínimo Viable (MVP) para la auditoría y verificación formal acelerada de Smart Contracts, diseñado originalmente como propuesta de desarrollo para la convocatoria de Premios de la Cátedra de Ciberseguridad UMA-VirusTotal / Google.
 
 ## Arquitectura del Proyecto
 
